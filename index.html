@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Image Dehazer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="title">🌫 Image Dehazer</h1>
+
+
+<!-- SIGNUP -->
+
+<div id="signupPage" class="card">
+
+<h2>Create Account</h2>
+
+<input id="su_user" placeholder="Username">
+<input id="su_pass" type="password" placeholder="Password">
+
+<button onclick="signup()">Signup</button>
+
+<p>Already have account?</p>
+
+<button onclick="showLogin()">Go to Login</button>
+
+</div>
+
+
+
+<!-- LOGIN -->
+
+<div id="loginPage" class="card hidden">
+
+<h2>Login</h2>
+
+<input id="li_user" placeholder="Username">
+<input id="li_pass" type="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+
+
+<!-- DASHBOARD -->
+
+<div id="dashboard" class="hidden">
+
+<div class="card">
+
+<h2>Upload Hazy Image</h2>
+
+<input type="file" id="image">
+
+<button onclick="upload()">Dehaze Image</button>
+
+<div id="result"></div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Your History</h2>
+
+<button onclick="loadHistory()">Refresh</button>
+
+<div id="history"></div>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
